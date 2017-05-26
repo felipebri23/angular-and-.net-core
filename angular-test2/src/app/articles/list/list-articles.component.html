@@ -1,0 +1,65 @@
+<div class="page-header">
+    <h1>Artículos</h1>
+</div>
+<div class="row">
+    <table class="table table-striped">
+        <thead>
+            <th style="width: 50px"></th>
+            <th>
+                <input type="text" class="form-control form-control--filter" placeholder="Id" [formControl]="filters.controls['id']">
+            </th>
+            <th>
+                <input type="text" class="form-control form-control--filter" placeholder="Descripción" [formControl]="filters.controls['description']">
+            </th>
+            <th>
+                <input type="text" class="form-control form-control--filter" placeholder="Precio" [formControl]="filters.controls['price']">
+            </th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let article of articles">
+                <td>
+                    <i (click)="showDetailModal(article)" style="cursor: pointer;" class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td>
+                    {{ article.id }}
+                </td>
+                <td>
+                    {{ article.description }}
+                </td>
+                <td>
+                    {{ article.price | number:'1.2-2' }} €
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <alert *ngIf="!articles.length" type="info">
+        No se han encontrado registros con los filtros seleccionados
+    </alert>
+</div>
+<aa-pagination [totalCount]="totalCount" (pageChanged)="pageChanged($event)"></aa-pagination>
+
+<div bsModal #detailModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left">Detalle artículo {{ selectedArticle?.id }}</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="hideDetailModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input disabled type="text" class="form-control" id="description" [(ngModel)]="selectedArticle.description">
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-eur" aria-hidden="true"></i></span>
+                        <input disabled type="text" class="form-control" id="price" [ngModel]="selectedArticle.price | number:'1.2-2'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-4 col-xs-6">
+        <div class="pagination pagination-sm">
+            <span>Mostrando</span>
+            <select class="form-control form-control--pagination" [formControl]="pageSizeFilter">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select> de
+            <span class="badge">{{totalCount}}</span>
+        </div>
+    </div>
+    <div class="col-md-8 col-xs-6">
+        <pagination [totalItems]="totalCount" [itemsPerPage]="pageSize" previousText="&lsaquo;" nextText="&rsaquo;" [maxSize]="6"
+            [rotate]="false" [(ngModel)]="pageIndex" (pageChanged)="innerPageChanged($event)" class="pagination-sm"></pagination>
+    </div>
+</div>

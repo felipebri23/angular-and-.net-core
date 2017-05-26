@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticAlways.AngularTest2.Api", "AnalyticAlways.AngularTest2.Api\AnalyticAlways.AngularTest2.Api.csproj", "{E6FA8025-3CD9-4523-8C81-ED49C9D03A8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AngularTestContext", "AngularTestContext", "{72555971-193A-460B-A1B9-978EAF47BC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticAlways.AngularTest.Infrastructure", "AnalyticAlways.AngularTest.Infrastructure\AnalyticAlways.AngularTest.Infrastructure.csproj", "{71D84DC9-579D-48C5-A929-13874863CC43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticAlways.AngularTest.Domain", "AnalyticAlways.AngularTest.Domain\AnalyticAlways.AngularTest.Domain.csproj", "{F6138841-550C-4B39-830E-F805E8AEC553}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reads", "Reads", "{2DA48BD9-71F0-41F4-8202-BB098156EBA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticAlways.AngularTest.Reads", "AnalyticAlways.AngularTest.Reads\AnalyticAlways.AngularTest.Reads.csproj", "{3D47AF35-FB34-475C-B407-63942996BE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticAlways.AngularTest2.IntergrationTest", "AnalyticAlways.AngularTest2.IntergrationTest\AnalyticAlways.AngularTest2.IntergrationTest.csproj", "{E5B525BF-93E2-41A6-9D4B-7E3C2C1AD6FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6FA8025-3CD9-4523-8C81-ED49C9D03A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FA8025-3CD9-4523-8C81-ED49C9D03A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FA8025-3CD9-4523-8C81-ED49C9D03A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FA8025-3CD9-4523-8C81-ED49C9D03A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D84DC9-579D-48C5-A929-13874863CC43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D84DC9-579D-48C5-A929-13874863CC43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D84DC9-579D-48C5-A929-13874863CC43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D84DC9-579D-48C5-A929-13874863CC43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6138841-550C-4B39-830E-F805E8AEC553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6138841-550C-4B39-830E-F805E8AEC553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6138841-550C-4B39-830E-F805E8AEC553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6138841-550C-4B39-830E-F805E8AEC553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D47AF35-FB34-475C-B407-63942996BE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D47AF35-FB34-475C-B407-63942996BE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D47AF35-FB34-475C-B407-63942996BE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D47AF35-FB34-475C-B407-63942996BE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B525BF-93E2-41A6-9D4B-7E3C2C1AD6FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B525BF-93E2-41A6-9D4B-7E3C2C1AD6FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B525BF-93E2-41A6-9D4B-7E3C2C1AD6FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B525BF-93E2-41A6-9D4B-7E3C2C1AD6FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71D84DC9-579D-48C5-A929-13874863CC43} = {72555971-193A-460B-A1B9-978EAF47BC99}
+		{F6138841-550C-4B39-830E-F805E8AEC553} = {72555971-193A-460B-A1B9-978EAF47BC99}
+		{3D47AF35-FB34-475C-B407-63942996BE48} = {2DA48BD9-71F0-41F4-8202-BB098156EBA6}
+	EndGlobalSection
+EndGlobal
